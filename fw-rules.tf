@@ -4,7 +4,7 @@ module "firewall_rules" {
   network_name = module.vpc.network_name
 
   rules = [{
-    name                    = "allow-ssh-ingress"
+    name                    = "allow-ssh-ingress1"
     description             = null
     direction               = "INGRESS"
     priority                = null
