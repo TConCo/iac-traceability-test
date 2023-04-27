@@ -4,8 +4,8 @@ resource "google_service_account" "default" {
 }
 
 resource "google_compute_instance" "default" {
-  name         = "test-3"
-  machine_type = "e2-medium"
+  name         = "test-3-1"
+  machine_type = "e2-small"
   zone         = "us-central1-a"
 
   labels = {
