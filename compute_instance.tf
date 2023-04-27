@@ -4,6 +4,13 @@ resource "google_service_account" "default" {
 }
 
 resource "google_compute_instance" "default" {
+  name         = "test-3"
+  machine_type = "e2-medium"
+  zone         = "us-central1-a"
+  
+}
+
+resource "google_compute_instance" "default" {
   name         = "test-2"
   machine_type = "e2-medium"
   zone         = "us-central1-a"
