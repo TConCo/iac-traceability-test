@@ -7,7 +7,17 @@ resource "google_compute_instance" "default" {
   name         = "test-3"
   machine_type = "e2-medium"
   zone         = "us-central1-a"
-  
+
+  labels = {
+    git_commit           = "55b06a8f417f1ca02c285ac40b54828214fab26e"
+    git_file             = "compute_instance_tf"
+    git_last_modified_at = "2023-04-27-13-36-26"
+    git_last_modified_by = "fatihtokus"
+    git_modifiers        = "fatihtokus"
+    git_org              = "fatihtokus"
+    git_repo             = "iac-traceability-test"
+    yor_trace            = "bdbb0e13-d19e-436b-b224-4776c337ecbb"
+  }
 }
 
 resource "google_compute_instance" "default" {
