@@ -12,4 +12,5 @@ resource "google_compute_instance" "default" {
     git_repo             = "iac-traceability-test"
     yor_trace            = "95e83080-3b51-4b97-84f4-af00687ec61a"
   }
+
 }
